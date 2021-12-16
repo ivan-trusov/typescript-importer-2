@@ -1,6 +1,6 @@
 {
 	"name": "typesctipt-importer-2-server",
-	"description": "Reincarnation of TS Importer (server part).",
+	"description": "Reincarnation of Typescript Importer (server part).",
 	"version": "0.0.1",
 	"author": "Ivan Trusov",
 	"license": "MIT",
@@ -9,7 +9,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-extension-samples"
+		"url": "https://github.com/ivan-trusov/typescript-importer-2"
 	},
 	"dependencies": {
 		"vscode-languageserver": "^7.0.0",

@@ -1,14 +1,14 @@
 {
 	"name": "typesctipt-importer-2",
-	"description": "Reincarnation of TS Importer",
+	"description": "Reincarnation of Typescript Importer",
 	"author": "Ivan Trusov",
 	"license": "MIT",
 	"version": "0.0.1",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/starkevin/VSCode-TypeScript-Importer"
+		"url": "https://github.com/ivan-trusov/typescript-importer-2"
 	},
-	"publisher": "Ivan Trusov",
+	"publisher": "IvanTrusov",
 	"engines": {
         "vscode": "^1.63.0"
     },
