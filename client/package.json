@@ -1,0 +1,23 @@
+{
+	"name": "typescript-importer-2-client",
+	"description": "Reincarnation of TS Importer (client part)",
+	"author": "Ivan Trusov",
+	"license": "MIT",
+	"version": "0.0.1",
+	"publisher": "Ivan Trusov",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-extension-samples"
+	},
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"dependencies": {
+		"vscode-languageclient": "^7.0.0",
+		"glob": "~7.2.0"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.52.0",
+		"@vscode/test-electron": "^1.6.1"
+	}
+}

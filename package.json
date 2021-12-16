@@ -1,0 +1,63 @@
+{
+	"name": "typesctipt-importer-2",
+	"description": "Reincarnation of TS Importer",
+	"author": "Ivan Trusov",
+	"license": "MIT",
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/starkevin/VSCode-TypeScript-Importer"
+	},
+	"publisher": "Ivan Trusov",
+	"engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "activationEvents": [
+        "onLanguage:typescript",
+        "onLanguage:javascript"
+    ],
+    "main": "./client/out/extension.js",
+    "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "StiTSImporter Configuration",
+            "properties": {
+                "StiTSImporter.showNamespaceOnImports": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "When set to true, imports will show the namespace in parenthesis"
+                },
+                "StiTSImporter.TSConfigFrameworkName": {
+                    "type": "string",
+                    "default": "frameworks",
+                    "description": "The node within TSConfig that references depenant frameworks that we have access to. Any framework listed in here will provide code hints. Requires Reload to take affect"
+                },
+                "StiTSImporter.IgnoreListedFolders": {
+                    "type": "string",
+                    "default": "./, .scripts/",
+                    "description": "Comma separated string. These folders will be excluded from code hints. This is useful if you have a mix of CommonJS and Namespaces"
+                }
+            }
+        }
+    },
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -b",
+		"watch": "tsc -b -w",
+		"lint": "eslint ./client/src ./server/src --ext .ts,.tsx",
+		"postinstall": "cd client && npm install && cd ../server && npm install && cd .."
+	},
+	"devDependencies": {
+		"@types/mocha": "^8.2.2",
+		"@types/node": "^12.12.0",
+		"@typescript-eslint/eslint-plugin": "^4.23.0",
+		"@typescript-eslint/parser": "^4.23.0",
+		"eslint": "^7.26.0",
+		"mocha": "^8.3.2",
+		"typescript": "^4.4.3",
+        "vsce": "^2.5.1"
+	}
+}
